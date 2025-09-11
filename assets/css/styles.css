@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --header-bg: #10375c;
+  --primary-color: #2e80ce;
+}
 
 html {
   font-size: 62.5%;
@@ -9,4 +13,68 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+/* common */
+.container {
+  width: 1170px;
+  /* khi co màn hình lại luôn giữ khoảng trống mỗi bên là 24px */
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+/* header  */
+
+.header {
+  min-height: 100vh;
+  background: var(--header-bg);
+}
+
+/* làm phần logo  */
+
+.logo {
+  display: inline-flex;
+  font-size: 1rem;
+  position: relative;
+}
+
+.logo__circle::before,
+.logo__circle::after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.logo__circle::before {
+  width: 3em;
+  height: 3em;
+  background: var(--primary-color);
+}
+
+.logo__circle::after {
+  position: absolute;
+  top: 1.1em;
+  left: 1.1em;
+  width: 1.6em;
+  height: 1.6em;
+  background: #fff;
+}
+
+.logo__text {
+  color: #fff;
+  margin-left: 0.6em;
+  line-height: 1.6em;
+}
+
+.logo__brand {
+  display: block;
+  color: #fff;
+  text-align: right;
+  font-size: 1.8em;
+}
+.logo__brand + .logo__brand {
+  font-size: 1.2em;
+  font-weight: 300;
 }
