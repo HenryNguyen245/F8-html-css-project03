@@ -107,8 +107,8 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
-  width: 1170px;
+  padding: 20px 10px;
+  width: 1200px;
   max-width: calc(100% - 48px);
   position: fixed; /* hoặc fixed */
   top: 0;
@@ -665,6 +665,7 @@ h1 {
 /* appointment */
 .appointment {
   padding: 85px 0;
+  margin-bottom: 85px;
 }
 .appointment__inner {
   padding: 100px 0px;
@@ -691,4 +692,9 @@ h1 {
   max-width: 52.74%;
   margin: 38px auto;
   font-size: 1.6rem;
+}
+/* Footer */
+.footer {
+  padding: 100px 0;
+  background: #10375c;
 }
